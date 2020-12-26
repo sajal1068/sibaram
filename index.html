@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result of the Test</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<!--main start-->
+	<main>
+		<!--banner start-->
+		<div class="banner">
+			<div class="banner-details">
+				<h2>RESULT of the test</h2>
+				<div class="flex-box">
+				  <div class="flex-details fade-bottom">
+					<figure>
+					  <img src="image/cal-1.png" alt="cal-1" class="res-img">
+					  <figcaption>Never</figcaption>
+					</figure>	
+				  </div>
+				  <div class="flex-details fade-top">
+					<figure>
+					  <img src="image/cal-2.png" alt="cal-2" class="res-img">
+					  <figcaption>Occasionally</figcaption>
+					</figure>	
+				  </div>
+				  <div class="flex-details fade-bottom">
+					<figure>
+					  <img src="image/clock.png" alt="clock" class="res-img">
+					  <figcaption>4 hours</figcaption>
+					</figure>	
+				  </div>
+				  <div class="flex-details fade-top">
+					<figure>
+					  <img src="image/chat.png" alt="chat" class="res-img">
+					  <figcaption>Yearly</figcaption>
+					</figure>	
+				  </div>
+				  <div class="flex-details fade-bottom">
+					<figure>
+					  <img src="image/cal-1.png" alt="cal-1" class="res-img">
+					  <figcaption>Never</figcaption>
+					</figure>	
+				  </div>
+				</div>
+			</div>
+			
+			<div class="slidecontainer">
+			  <input type="range" min="1" max="30" value="5.5" class="slider" id="myRange">
+			</div>
+			<div class="slidecontainer_text">
+			  <p>Less Relevant </p>
+			  <p>Relevant</p>
+			  <p>Very Relevant </p>
+			</div>
+			
+			<div class="try-btn">
+				<button type="submit" onclick="myFunction()">Try Again <img src="image/right-angle.png" alt="left-angle"/></button>
+			</div>
+		</div>
+		<!--banner end-->
+	</main>
+	<!--main end-->
+	<script>		
+		function myFunction() {	
+		 var interval_one;
+			interval_one = setInterval(function(){	
+				clearInterval(interval_one)
+				var text = document.querySelector('input').value = 5.5;				
+			}, 10);
+			
+		}
+	</script>
+</body>
+</html>
