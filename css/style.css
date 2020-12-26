@@ -131,7 +131,7 @@ h2{
 .slidecontainer::after {
     content: '';
 	position: absolute;
-	left: 34.33%;
+	left: 33.33%;
 	height: 24.5px;
 	border-right: solid #fff 1px;
 	top: 10px;
@@ -143,7 +143,7 @@ h2{
 	height: 24.5px;
 	border-left: solid #fff 1px;
 	top: 10px;
-	right: 32.33%;
+	right: 34.33%;
 	z-index: 1;
 }
 
@@ -182,33 +182,10 @@ h2{
   border:solid 10px #acc4b4;
   position:relative;  
   cursor:pointer;
+  background:linear-gradient(to right, #c0584e 0, #c0584e 33%, #c33f3a 33%, #c33f3a 66%, #c1332f 66%, #c1332f 100%);
+  box-sizing:border-box;
+  height:45px;  
 }
-/* .slider::after{ */
-	/* content:''; */
-	/* position:absolute; */
-	/* width:33.33%; */
-	/* height: 25px; */
-	/* background:#be7263; */
-	 /* border-top-left-radius: 15px; */
-	 /* border-bottom-left-radius: 15px; */
-	/* opacity:0.5; */
-	/* border-right: solid #fff 1px;	 */
-	
-	
-/* } */
-/* .slider::before{ */
-	/* content:''; */
-	/* position:absolute; */
-	/* width:33.33%; */
-	/* height: 25px; */
-	/* background:#c30f10; */
-	/* border-top-right-radius: 15px; */
-	/* border-bottom-right-radius: 15px; */
-	/* opacity:0.5; */
-	/* right:0px;	 */
-	/* border-left: solid #fff 1px; */
-	
-/* } */
 
 
 
@@ -235,7 +212,6 @@ h2{
     width: 32px;
     background: url(../image/pointer.png) no-repeat;
     margin-top: -40px;
-	
 	position:relative;
 	cursor:pointer;
 	z-index:9999;
@@ -253,16 +229,10 @@ h2{
 }
 
 input[type=range]::-moz-range-track{
-	
 	position:relative;
-	
 	height: 25px;
 	 background:linear-gradient(to right, #c0584e 0, #c0584e 33%, #c33f3a 33%, #c33f3a 66%, #c1332f 66%, #c1332f 100%);
 	 border-radius: 15px;
-	
-	
-	
-	
 }
 
 input[type=range]::-moz-range-track:after{	
@@ -365,6 +335,19 @@ figure{
 .try-btn button {
     padding: 10px 32px;
 }
+.slider::-webkit-slider-thumb {
+	height: 30px;
+    width: 20px;
+	margin-top:-25px;
+	background-size:90%;
+}
+
+.try-btn button {
+    font-size: 18px;
+}
+.try-btn button img {
+    width: 7px;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -374,14 +357,21 @@ figure{
 .slidecontainer {max-width: 320px;margin:4rem auto 10px;}
 .slidecontainer_text {max-width: 320px;}
 figcaption {font-size: 12px;}
-.slidecontainer_text p{font-size: 10px;}
+.slidecontainer_text p{font-size: 8px;}
+.slidecontainer_text {
+    max-width: 450px;
+}
+@media screen and (max-width: 1024px)
+.slidecontainer_text {
+    max-width: 700px;
+}
+.slidecontainer_text {
+    padding-left: 9px;
+}
 }
 
 @media screen and (max-width: 360px) {
 .slidecontainer {
 	max-width: 300px;
-}
-.slidecontainer_text {
-    padding-left: 25px;
 }
 }
